@@ -80,7 +80,6 @@ class MainActivity : AppCompatActivity() {
             showResetMessage.value = showResetMessage.value != true
             delay(1000)
             showResetMessage.value = showResetMessage.value != true
-            _time.value = 0
         }
     }
 
@@ -96,7 +95,7 @@ class MainActivity : AppCompatActivity() {
 
     private suspend fun incrementTime(){
         delay(1000)
-        if (_time.value != null) {
+        if (_time.value != null && started.value == true) {
             _time.value = _time.value as Long + 1L
         }
         if(started.value == true){
