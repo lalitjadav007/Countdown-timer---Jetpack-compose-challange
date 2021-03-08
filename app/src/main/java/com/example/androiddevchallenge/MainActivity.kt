@@ -58,8 +58,8 @@ class MainActivity : AppCompatActivity() {
         setContent {
             MyTheme {
                 MyApp(second, minute, hour, started, { startOrPauseTimer() }, {
-                    _time.value = 0
                     started.value = false
+                    _time.value = 0
                     lifecycleScope.launch {
                         showMessage()
                     }
@@ -80,6 +80,7 @@ class MainActivity : AppCompatActivity() {
             showResetMessage.value = showResetMessage.value != true
             delay(1000)
             showResetMessage.value = showResetMessage.value != true
+            _time.value = 0
         }
     }
 
