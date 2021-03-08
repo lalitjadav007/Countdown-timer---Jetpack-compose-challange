@@ -7,11 +7,13 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
+This app is build for jetpack compose Week2 Challange
 
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
+I have tried to make use of card and text mainly to create this UI, little bit animation for snackbar like message.
 
 
 ## :camera_flash: Screenshots
